@@ -39,7 +39,7 @@ const AboutAndDetails = () => {
             </h3>
             <p className="text-gray-600 text-sm">
               Your information and transactions are encrypted and securely
-              stored.
+              stored.Payments are sercured,No worry and pay bills without tensions.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ const AboutAndDetails = () => {
           className="w-full md:w-1/2 rounded-2xl shadow-md object-cover"
         />
         <div className="md:w-1/2 space-y-4">
-          <h2 className="text-4xl font-bold text-blue-600">Who We Are</h2>
+          <h2 className="text-4xl font-bold text-blue-600">Who We Are?</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
             We’re a small but passionate team of developers, designers, and
             thinkers dedicated to making bill management effortless for
