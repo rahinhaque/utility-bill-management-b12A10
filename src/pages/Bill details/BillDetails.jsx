@@ -20,7 +20,7 @@ const BillDetails = ({ user }) => {
   if (!bill)
     return (
       <p className="text-center py-10 text-gray-500 text-lg font-medium">
-        Loading bill details...
+        Loading bill details,Please Wait...
       </p>
     );
 
