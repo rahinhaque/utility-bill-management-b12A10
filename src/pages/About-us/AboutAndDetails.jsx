@@ -21,7 +21,7 @@ const AboutAndDetails = () => {
             </h3>
             <p className="text-gray-600 text-sm">
               Pay all your bills instantly through one dashboard — no more
-              queueing or delays.
+              queueing or delays.No hassels.
             </p>
           </div>
           <div className="p-6 bg-blue-50 rounded-2xl shadow-sm">
@@ -29,7 +29,7 @@ const AboutAndDetails = () => {
               📊 Smart Tracking
             </h3>
             <p className="text-gray-600 text-sm">
-              Get real-time updates and access your full payment history
+              Get real-time Updates and Access your full payment history
               whenever you need it.
             </p>
           </div>
