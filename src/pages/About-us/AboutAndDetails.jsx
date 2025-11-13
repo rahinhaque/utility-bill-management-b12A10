@@ -60,7 +60,7 @@ const AboutAndDetails = () => {
             thinkers dedicated to making bill management effortless for
             everyone. From students paying tuition to families handling monthly
             utilities — we aim to make your financial routines smoother,
-            smarter, and more transparent.
+            smarter, and more transparent.Make Your Bill payment with Our Site.
           </p>
           <p className="text-gray-700 text-lg leading-relaxed">
             Our mission is simple: empower users to stay organized, save time,
