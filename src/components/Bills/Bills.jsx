@@ -19,11 +19,11 @@ function Bills() {
   useEffect(() => {
     const fetchBills = async () => {
       try {
-        setLoading(true); 
+        setLoading(true);
         const url =
           selectedCategory === "All"
-            ? "http://localhost:5000/bills"
-            : `http://localhost:5000/bills?category=${selectedCategory}`;
+            ? "https://utility-bill-management-server-three.vercel.app/bills"
+            : `https://utility-bill-management-server-three.vercel.app/bills?category=${selectedCategory}`;
 
         const res = await fetch(url);
         const data = await res.json();
@@ -44,7 +44,6 @@ function Bills() {
         All Bills
       </h2>
 
-     
       <div className="flex flex-wrap justify-center gap-3 mb-8">
         {categories.map((cat) => (
           <button
@@ -61,7 +60,6 @@ function Bills() {
         ))}
       </div>
 
-     
       {loading ? (
         <div className="flex justify-center items-center py-20">
           <div className="w-14 h-14 border-4 border-blue-500 border-dotted rounded-full animate-spin"></div>

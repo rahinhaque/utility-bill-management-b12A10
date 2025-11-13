@@ -21,11 +21,14 @@ const AddBill = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/bills", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        "https://utility-bill-management-server-three.vercel.app/bills",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await res.json();
       if (data.insertedId) {
@@ -37,7 +40,7 @@ const AddBill = () => {
           image: "",
           location: "",
           details: "",
-          date: "", 
+          date: "",
         });
       } else {
         toast.error("Failed to add bill.");
@@ -84,7 +87,7 @@ const AddBill = () => {
         </select>
 
         <input
-          type="month" 
+          type="month"
           name="date"
           value={formData.date}
           onChange={handleChange}

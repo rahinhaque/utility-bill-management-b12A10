@@ -10,7 +10,7 @@ const BillDetails = ({ user }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/bills/${id}`)
+    fetch(`https://utility-bill-management-server-three.vercel.app/bills/${id}`)
       .then((res) => res.json())
       .then((data) => setBill(data))
       .catch((err) => console.error("Error fetching bill details:", err));
@@ -44,11 +44,14 @@ const BillDetails = ({ user }) => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/payments", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        "https://utility-bill-management-server-three.vercel.app/payments",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
       const data = await res.json();
 
       if (data.success) {

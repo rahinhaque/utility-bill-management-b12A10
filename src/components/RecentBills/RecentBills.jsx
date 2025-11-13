@@ -6,7 +6,7 @@ const RecentBills = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/recent-data")
+    fetch("https://utility-bill-management-server-three.vercel.app/recent-data")
       .then((res) => res.json())
       .then((data) => setBills(data))
       .catch((err) => console.error("Error fetching recent bills:", err));

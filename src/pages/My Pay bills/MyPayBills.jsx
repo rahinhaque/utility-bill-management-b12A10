@@ -11,7 +11,9 @@ const MyPayBills = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/payments?email=${user.email}`)
+      fetch(
+        `https://utility-bill-management-server-three.vercel.app/payments?email=${user.email}`
+      )
         .then((res) => res.json())
         .then((data) => setBills(data))
         .catch((err) => console.error("Error loading bills:", err));
@@ -47,7 +49,7 @@ const MyPayBills = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/apipayments/${selectedBill._id}`,
+        `https://utility-bill-management-server-three.vercel.app/payments/${selectedBill._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -80,9 +82,12 @@ const MyPayBills = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const res = await fetch(`http://localhost:5000/apipayments/${id}`, {
-            method: "DELETE",
-          });
+          const res = await fetch(
+            `https://utility-bill-management-server-three.vercel.app/payments/${id}`,
+            {
+              method: "DELETE",
+            }
+          );
           const data = await res.json();
           if (data.success) {
             setBills((prev) => prev.filter((b) => b._id !== id));
