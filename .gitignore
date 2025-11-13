@@ -22,7 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
+# Node Modules And .env File..
 node_modules/
 .env
 
