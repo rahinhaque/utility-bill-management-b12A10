@@ -46,7 +46,7 @@ const BillDetails = ({ user }) => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/payments", {
+      const res = await fetch("http://localhost:5000/apipayments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -67,7 +67,6 @@ const BillDetails = ({ user }) => {
 
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 relative">
-     
       <div className="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-200">
         <div className="relative">
           <img
@@ -129,7 +128,6 @@ const BillDetails = ({ user }) => {
         </div>
       </div>
 
-    
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl p-6 w-full max-w-lg relative">

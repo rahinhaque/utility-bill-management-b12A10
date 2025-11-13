@@ -34,7 +34,7 @@ const BillDetails = ({ user }) => {
 
     const formData = {
       billId: bill._id,
-      userEmail: e.target.userEmail.value, 
+      userEmail: e.target.userEmail.value,
       username: e.target.username.value,
       address: e.target.address.value,
       phone: e.target.phone.value,
@@ -65,7 +65,6 @@ const BillDetails = ({ user }) => {
 
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 relative">
-      
       <div className="bg-white rounded-3xl shadow-lg overflow-hidden border border-gray-200">
         <div className="relative">
           <img
@@ -128,7 +127,6 @@ const BillDetails = ({ user }) => {
         </div>
       </div>
 
-      
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl p-6 w-full max-w-lg relative">
@@ -202,7 +200,7 @@ const BillDetails = ({ user }) => {
           </div>
         </div>
       )}
-      
+
       <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );

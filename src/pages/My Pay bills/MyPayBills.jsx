@@ -47,7 +47,7 @@ const MyPayBills = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/payments/${selectedBill._id}`,
+        `http://localhost:5000/apipayments/${selectedBill._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -80,7 +80,7 @@ const MyPayBills = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const res = await fetch(`http://localhost:5000/payments/${id}`, {
+          const res = await fetch(`http://localhost:5000/apipayments/${id}`, {
             method: "DELETE",
           });
           const data = await res.json();

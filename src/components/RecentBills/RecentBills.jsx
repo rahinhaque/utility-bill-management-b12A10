@@ -14,7 +14,6 @@ const RecentBills = () => {
 
   return (
     <section className="max-w-6xl mx-auto py-12 px-4">
-     
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-primary">
         Recent Bills
       </h2>

@@ -56,7 +56,6 @@ const AddBill = () => {
         onSubmit={handleSubmit}
         className="space-y-4 bg-white p-6 rounded-2xl shadow-md border border-gray-200"
       >
-     
         <input
           type="text"
           name="title"
@@ -67,7 +66,6 @@ const AddBill = () => {
           required
         />
 
- 
         <select
           name="category"
           value={formData.category}
@@ -83,7 +81,6 @@ const AddBill = () => {
           <option value="Others">Others</option>
         </select>
 
-       
         <input
           type="number"
           name="amount"
@@ -94,7 +91,6 @@ const AddBill = () => {
           required
         />
 
-       
         <input
           type="text"
           name="image"
@@ -104,7 +100,6 @@ const AddBill = () => {
           className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-400 outline-none"
         />
 
-        
         <input
           type="text"
           name="location"
@@ -123,7 +118,6 @@ const AddBill = () => {
           rows="4"
         ></textarea>
 
-        
         <button
           type="submit"
           className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl font-semibold transition"
