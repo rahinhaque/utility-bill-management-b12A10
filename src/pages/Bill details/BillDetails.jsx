@@ -46,7 +46,7 @@ const BillDetails = ({ user }) => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/apipayments", {
+      const res = await fetch("http://localhost:5000/payments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

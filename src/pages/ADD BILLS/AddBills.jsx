@@ -10,6 +10,7 @@ const AddBill = () => {
     image: "",
     location: "",
     details: "",
+    date: "",
   });
 
   const handleChange = (e) => {
@@ -36,6 +37,7 @@ const AddBill = () => {
           image: "",
           location: "",
           details: "",
+          date: "", 
         });
       } else {
         toast.error("Failed to add bill.");
@@ -80,6 +82,15 @@ const AddBill = () => {
           <option value="Internet">Internet</option>
           <option value="Others">Others</option>
         </select>
+
+        <input
+          type="month" 
+          name="date"
+          value={formData.date}
+          onChange={handleChange}
+          className="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-400 outline-none"
+          required
+        />
 
         <input
           type="number"
