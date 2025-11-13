@@ -123,7 +123,7 @@ const BillDetails = ({ user }) => {
             onClick={() => navigate("/add-bills")}
             className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl font-semibold transition shadow-md"
           >
-            + Add More Bills
+            + Add More Bills Here
           </button>
         </div>
       </div>
