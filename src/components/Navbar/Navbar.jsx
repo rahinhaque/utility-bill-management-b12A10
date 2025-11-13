@@ -24,7 +24,7 @@ export default function Navbar() {
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
-  // ----------------------------------------
+ 
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
